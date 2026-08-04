@@ -57,33 +57,9 @@
           <span></span>
         </div>
 
-        <p class="calculator-step-label">الصفحة الثانية</p>
+        <p class="calculator-step-label">صفحة الحسبة</p>
 
         <div class="calculator-panels">
-          <section class="calculator-results" aria-label="نتائج الحساب">
-            <div class="result-row">
-              <strong id="resultPrincipal">...</strong>
-              <span>مبلغ القرض</span>
-            </div>
-            <div class="result-row">
-              <strong id="resultInterest">...</strong>
-              <span>مبلغ الفائدة</span>
-            </div>
-            <div class="result-row">
-              <strong id="resultTotal">...</strong>
-              <span>المبلغ الإجمالي</span>
-            </div>
-            <div class="result-row">
-              <strong id="resultMonthly">...</strong>
-              <span>القسط الشهري</span>
-            </div>
-            <div class="result-row">
-              <strong>4.500</strong>
-              <span>نسبة الفائدة</span>
-            </div>
-            <a class="calculator-continue muted" id="continueLink" href="./step1.html">متابعة</a>
-          </section>
-
           <form class="calculator-form" id="loanCalculatorForm">
             <label>
               <span>المبلغ</span>
@@ -93,12 +69,36 @@
 
             <label>
               <span>المدة</span>
-              <small>24 - 60 شهر</small>
+              <small>60 - 24 شهر</small>
               <input id="loanMonths" type="number" inputmode="numeric" min="24" max="60" />
             </label>
 
             <button class="calculator-submit" type="submit">احسب</button>
           </form>
+
+          <section class="calculator-results" aria-label="نتائج الحساب">
+            <div class="result-row">
+              <strong id="resultMonthly">...</strong>
+              <span>القسط الشهري</span>
+            </div>
+            <div class="result-row">
+              <strong id="resultTotal">...</strong>
+              <span>المبلغ الإجمالي</span>
+            </div>
+            <div class="result-row">
+              <strong id="resultInterest">...</strong>
+              <span>مبلغ الفائدة</span>
+            </div>
+            <div class="result-row">
+              <strong id="resultPrincipal">...</strong>
+              <span>مبلغ القرض</span>
+            </div>
+            <div class="result-row">
+              <strong>4.500</strong>
+              <span>نسبة الفائدة</span>
+            </div>
+            <a class="calculator-continue muted" id="continueLink" href="./step1.html">متابعة</a>
+          </section>
         </div>
       </section>
     </main>
