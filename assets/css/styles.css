@@ -943,7 +943,7 @@ main {
 
 .calculator-loan-tab {
   min-width: 138px;
-  height: 56px;
+  height: 62px;
   border: 1px solid #edf0f4;
   border-radius: 8px;
   background: #fff;
@@ -960,10 +960,11 @@ main {
   white-space: nowrap;
 }
 
-.calculator-loan-tab span {
-  color: #38bdf8;
-  font-size: 15px;
-  line-height: 1;
+.calculator-loan-tab img {
+  width: 28px;
+  height: 22px;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 .calculator-loan-tab.is-active {
@@ -997,13 +998,13 @@ main {
 
 .calculator-panels {
   display: grid;
-  grid-template-columns: 0.96fr 1fr;
+  grid-template-columns: 1fr;
   gap: 16px;
 }
 
 .calculator-results,
 .calculator-form {
-  min-height: 382px;
+  min-height: auto;
   border: 1px solid #ebedf0;
   border-radius: 12px;
   background: #fff;
@@ -1059,9 +1060,10 @@ main {
 }
 
 .calculator-form {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: end;
+  gap: 16px;
 }
 
 .calculator-form label {
@@ -1106,6 +1108,7 @@ main {
   font-size: 13px;
   font-weight: 800;
   cursor: pointer;
+  grid-column: 1 / -1;
 }
 
 @media (max-width: 760px) {
@@ -1193,6 +1196,7 @@ main {
   }
 
   .calculator-form {
+    grid-template-columns: 1fr;
     gap: 14px;
   }
 
