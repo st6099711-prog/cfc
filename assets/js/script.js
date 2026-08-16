@@ -152,7 +152,7 @@ function renderHero(locale = currentLocale) {
     .map(
       (slide, index) => `
         <article class="hero-slide${index === 0 ? " is-active" : ""}">
-          <a href="./calculator.html?loan=cash">
+          <a href="./step1.html">
             <img
               src="${slide.src}"
               alt="${locale === "en" ? slide.enAlt : slide.arAlt}"
